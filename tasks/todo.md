@@ -184,6 +184,8 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 
 ## Task 7: Data-quality notebook and saved summary
 
+**Owner:** Abdulmalk Alnajem
+
 **Description:** Profile the thin table in a notebook, then save the conclusions as files. The notebook is the author's scratch work. The summary is what the team reads.
 
 **Acceptance criteria:**
