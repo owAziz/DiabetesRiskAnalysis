@@ -120,7 +120,7 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 
 ## Task 5: Implement cleaning as importable functions
 
-**Owner:** Latifah Alsulihem
+**Owner:** Nasser Abanmy
 
 **Description:** Turn the dictionary into functions other tasks import. Map non-answers to missing, apply the BMI scale, and build the three-class target. Height and weight are parsed only far enough to audit BMI, because their raw codes mix units.
 
@@ -149,7 +149,7 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 
 ## Task 6: Freeze the train, validation, and test ids
 
-**Owner:** Latifah Alsulihem
+**Owner:** Nasser Abanmy
 
 **Description:** Split labeled rows 60/20/20, stratified on `target`, with a fixed seed. Save the assignment so every model uses the same people. Unlabeled rows stay out of the split.
 
@@ -184,6 +184,8 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 
 ## Task 7: Data-quality notebook and saved summary
 
+**Owner:** Abdulmalk Alnajem
+
 **Description:** Profile the thin table in a notebook, then save the conclusions as files. The notebook is the author's scratch work. The summary is what the team reads.
 
 **Acceptance criteria:**
@@ -208,6 +210,8 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 **Estimated scope:** Medium: 3-5 files
 
 ## Task 8: Relationship charts for age, body size, and activity
+
+**Owner:** Abdulmalk Alnajem
 
 **Description:** Answer the first half of the project question with weighted descriptive charts: how age, BMI, height, weight, and physical activity differ across the three diabetes statuses. This task does not fit a model.
 
