@@ -211,6 +211,8 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 
 ## Task 8: Relationship charts for age, body size, and activity
 
+**Owner:** Abdulmalk Alnajem
+
 **Description:** Answer the first half of the project question with weighted descriptive charts: how age, BMI, height, weight, and physical activity differ across the three diabetes statuses. This task does not fit a model.
 
 **Acceptance criteria:**
