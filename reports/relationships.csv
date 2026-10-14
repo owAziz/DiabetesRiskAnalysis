@@ -1,0 +1,4 @@
+target,interviews,mean_age,mean_bmi,obese_pct,exercise_pct,mean_height_cm,mean_weight_kg,bmi_answered,exercise_answered
+no_diabetes,33411,47.1,27.9,29.8,81.4,169.9,80.9,31430,33332
+prediabetes,951,57.5,31.0,44.3,66.8,167.6,85.6,897,950
+diabetes,5638,60.5,31.8,52.5,68.2,169.7,91.8,5291,5619
