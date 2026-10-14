@@ -55,3 +55,11 @@ Notebooks are for exploration. Shared code belongs in `src/diabetes_risk/`.
 ```bash
 python src/diabetes_risk/load.py
 ```
+
+## Cleaned table and descriptive results
+- To write the cleaned table `data/processed/clean.csv` from the thin table, run:
+```bash
+python src/diabetes_risk/describe.py
+```
+- Data quality and cleaning decisions: [reports/data_quality.md](reports/data_quality.md) (work in `notebooks/01_cleaning.ipynb`)
+- Age, BMI, height, weight, and exercise by diabetes status: [reports/relationships.md](reports/relationships.md) (work in `notebooks/02_relationships.ipynb`)

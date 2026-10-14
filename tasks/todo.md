@@ -190,20 +190,20 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 
 **Acceptance criteria:**
 
-- [ ] `notebooks/01_data_quality.ipynb` shows missingness, target counts, and impossible values (for example BMI far outside a human range) using the cleaning functions
-- [ ] `reports/data_quality.md` states how many rows are unlabeled, how many labeled rows remain, and any column that is too missing to use
-- [ ] Figures cited in that note are saved under `reports/figures/`
+- [x] `notebooks/01_cleaning.ipynb` (named by the week-2 cleaning assignment) shows missingness, target counts, and impossible values (for example BMI far outside a human range) using the cleaning functions
+- [x] `reports/data_quality.md` states how many rows are unlabeled, how many labeled rows remain, and any column that is too missing to use
+- [x] Figures cited in that note are saved under `reports/figures/`
 
 **Verification:**
 
-- [ ] Manual check: the notebook runs from top to bottom on the Parquet file
-- [ ] Manual check: `reports/data_quality.md` numbers match `reports/class_counts.csv`
+- [x] Manual check: the notebook runs from top to bottom on the Parquet file
+- [x] Manual check: `reports/data_quality.md` numbers match `reports/class_counts.csv`
 
 **Dependencies:** Task 3, Task 5
 
 **Files likely touched:**
 
-- `notebooks/01_data_quality.ipynb`
+- `notebooks/01_cleaning.ipynb`
 - `reports/data_quality.md`
 - `reports/figures/`
 
@@ -217,16 +217,16 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 
 **Acceptance criteria:**
 
-- [ ] Rates and means that describe the survey use the weight column from the dictionary
-- [ ] Saved figures compare the three target classes on age, BMI, and exercise
-- [ ] A short height-and-weight note shows they track BMI, which is why the model does not also include them
-- [ ] `reports/relationships.md` states each comparison in a few sentences and links the figure files
-- [ ] The notebook imports cleaning from `src/diabetes_risk/` rather than recoding `DIABETE4` inline
+- [x] Rates and means that describe the survey use the weight column from the dictionary
+- [x] Saved figures compare the three target classes on age, BMI, and exercise
+- [x] A short height-and-weight note shows they track BMI, which is why the model does not also include them
+- [x] `reports/relationships.md` states each comparison in a few sentences and links the figure files
+- [x] The notebook imports cleaning from `src/diabetes_risk/` rather than recoding `DIABETE4` inline
 
 **Verification:**
 
-- [ ] Manual check: `notebooks/02_relationships.ipynb` runs from top to bottom
-- [ ] Manual check: every number in `reports/relationships.md` is reproducible from the saved table or figure
+- [x] Manual check: `notebooks/02_relationships.ipynb` runs from top to bottom
+- [x] Manual check: every number in `reports/relationships.md` is reproducible from the saved table or figure
 
 **Dependencies:** Task 5. Can run beside Tasks 9 and 10.
 
