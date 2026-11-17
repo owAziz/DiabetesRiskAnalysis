@@ -9,3 +9,6 @@ models/*
 __pycache__/
 *.py[cod]
 data/raw/LLCP2024.XPT
+
+# Local slideshow. Keep it off GitHub.
+slides/

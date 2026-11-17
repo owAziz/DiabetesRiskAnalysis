@@ -268,26 +268,28 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 
 ## Checkpoint: Descriptive answer
 
-- [ ] `reports/relationships.md` and `reports/diabetes_type.md` stand alone without a notebook
-- [ ] Weighted figures name the weight column
+- [x] `reports/relationships.md` and `reports/diabetes_type.md` stand alone without a notebook
+- [x] Weighted figures name the weight column
 - [ ] Review with the team. The written question is answerable even before the model is strong
 
 ## Task 10: Fit models against a majority-class reference
+
+**Owner:** Latifah Alsulihem
 
 **Description:** Fit a majority-class reference and any other classifiers on the train split, using the main inputs named in `reports/contract.md`. Model type is not fixed. Score every model on the validation split. Record how many rows were fit and how many were left out.
 
 **Acceptance criteria:**
 
-- [ ] Training rows come from `split == train` joined to the cleaned table
-- [ ] `reports/metrics_validation.csv` has one row per model, including the majority-class reference, with macro F1 and per-class recall
-- [ ] Each fitted model is saved under `models/`
-- [ ] The metrics record how many rows were fit and how many were left out
-- [ ] The test split is not read
+- [x] Training rows come from `split == train` joined to the cleaned table
+- [x] `reports/metrics_validation.csv` has one row per model, including the majority-class reference, with macro F1 and per-class recall
+- [x] Each fitted model is saved under `models/`
+- [x] The metrics record how many rows were fit and how many were left out
+- [x] The test split is not read
 
 **Verification:**
 
-- [ ] Tests pass: `python -m pytest tests/test_metrics.py` for the metric helper on a tiny hand-built example
-- [ ] Manual check: rerunning training does not change `split.csv`
+- [x] Tests pass: `python -m pytest tests/test_metrics.py` for the metric helper on a tiny hand-built example
+- [x] Manual check: rerunning training does not change `split.csv`
 
 **Dependencies:** Task 5, Task 6
 
@@ -302,18 +304,20 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 
 ## Task 11: Compare models and name the chosen one
 
+**Owner:** Latifah Alsulihem
+
 **Description:** Compare the models from Task 10 on the same rows, main inputs, and validation metric. Further models may be added. Model type is not fixed. The chosen model is the one with the highest validation macro F1.
 
 **Acceptance criteria:**
 
-- [ ] Every compared model uses the same train rows and the same main inputs
-- [ ] `reports/model_comparison.md` lists each model, including the majority-class reference, with validation macro F1, and names the chosen model
-- [ ] The test split is still unread
+- [x] Every compared model uses the same train rows and the same main inputs
+- [x] `reports/model_comparison.md` lists each model, including the majority-class reference, with validation macro F1, and names the chosen model
+- [x] The test split is still unread
 
 **Verification:**
 
-- [ ] Manual check: the comparison table matches `reports/metrics_validation.csv`
-- [ ] Manual check: the chosen model is the highest validation macro F1; if that is the majority-class reference, the write-up says so
+- [x] Manual check: the comparison table matches `reports/metrics_validation.csv`
+- [x] Manual check: the chosen model is the highest validation macro F1; if that is the majority-class reference, the write-up says so
 
 **Dependencies:** Task 10
 
@@ -380,7 +384,7 @@ Any teammate can take the next task whose dependencies are done. One owner per t
 
 ## Checkpoint: Model
 
-- [ ] The chosen model is the highest validation macro F1, and the comparison says whether it beats the majority-class reference
+- [x] The chosen model is the highest validation macro F1, and the comparison says whether it beats the majority-class reference
 - [ ] `python -m diabetes_risk.train` rewrites the model and `reports/metrics.json`
 - [ ] Test metrics are produced once, with the flag, and set aside for Task 14
 - [ ] Review with the team before writing the results page
