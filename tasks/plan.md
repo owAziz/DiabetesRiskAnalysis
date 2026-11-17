@@ -69,10 +69,10 @@ Tasks 8 and 9 can run at the same time as Task 10 once cleaning exists. Task 9 c
 
 ### Phase 2: Shared table
 
-- [ ] Task 3: Load BRFSS into a thin Parquet table
-- [ ] Task 4: Write the column dictionary
-- [ ] Task 5: Implement cleaning as importable functions
-- [ ] Task 6: Freeze the train, validation, and test ids
+- [x] Task 3: Load BRFSS into a thin Parquet table
+- [x] Task 4: Write the column dictionary
+- [x] Task 5: Implement cleaning as importable functions
+- [x] Task 6: Freeze the train, validation, and test ids
 
 ### Checkpoint: Shared table
 
@@ -82,9 +82,9 @@ Tasks 8 and 9 can run at the same time as Task 10 once cleaning exists. Task 9 c
 
 ### Phase 3: Answer the question descriptively
 
-- [ ] Task 7: Data-quality notebook and saved summary
-- [ ] Task 8: Relationship charts for age, body size, and activity
-- [ ] Task 9: Diabetes-type table for respondents with diabetes
+- [x] Task 7: Data-quality notebook and saved summary
+- [x] Task 8: Relationship charts for age, body size, and activity
+- [x] Task 9: Diabetes-type table for respondents with diabetes
 
 ### Checkpoint: Descriptive answer
 
@@ -93,14 +93,14 @@ Tasks 8 and 9 can run at the same time as Task 10 once cleaning exists. Task 9 c
 
 ### Phase 4: Model
 
-- [ ] Task 10: Fit models against a majority-class reference
-- [ ] Task 11: Compare models and name the chosen one
+- [x] Task 10: Fit models against a majority-class reference
+- [x] Task 11: Compare models and name the chosen one
 - [ ] Task 12: Error-analysis notebook on saved predictions
 - [ ] Task 13: Single training command for the chosen model
 
 ### Checkpoint: Model
 
-- [ ] The chosen model is the highest validation macro F1, and the comparison says whether it beats the majority-class reference
+- [x] The chosen model is the highest validation macro F1, and the comparison says whether it beats the majority-class reference
 - [ ] `python -m diabetes_risk.train` rewrites the model file and `reports/metrics.json`
 - [ ] Test-set metrics are computed once and match the write-up
 

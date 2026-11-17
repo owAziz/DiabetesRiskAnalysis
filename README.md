@@ -28,9 +28,11 @@ The data are a U.S. government work in the public domain. Cite CDC when the resu
 - Bandar Alshahrani -/bandar345
 - Abdulmalk Alnajem -/AbdulmalkNaj
 - Latifa Aljbali -/laajbali
+- Nasser Abanmy
+
 ## 4. Status
 
-Dataset selected. The project layout and the analysis contract are in place. Modeling has not started.
+The layout, contract, cleaned table, descriptive charts, and diabetes-type table are in place. The week-4 numeric table is in `data/processed/features.csv`.
 
 ## 5. Layout
 
@@ -64,3 +66,10 @@ python src/diabetes_risk/describe.py
 - Data quality and cleaning decisions: [reports/data_quality.md](reports/data_quality.md) (work in `notebooks/01_cleaning.ipynb`)
 - Age, BMI, height, weight, and exercise by diabetes status: [reports/relationships.md](reports/relationships.md) (work in `notebooks/02_relationships.ipynb`)
 - Week 3 exploratory plots: [notebooks/02_eda.ipynb](notebooks/02_eda.ipynb)
+- Week 4 numeric modeling table: [notebooks/03_features.ipynb](notebooks/03_features.ipynb), written to `data/processed/features.csv`
+
+Rebuild that table from the repository root:
+
+```bash
+PYTHONPATH=src python -m diabetes_risk.features
+```
